@@ -33,13 +33,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
+    'django.contrib.admin',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +121,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'upload'
+LOGIN_REDIRECT_URL = '/'
 
 
 # Default primary key field type
